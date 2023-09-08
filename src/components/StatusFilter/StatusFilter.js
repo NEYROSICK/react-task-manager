@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { filterStatus } from 'redux/constants';
 import { getFilterStatus } from 'redux/selectors';
 import { useDispatch } from 'react-redux';
-import { changeFilter } from 'redux/actions';
+import { changeFilter } from 'redux/filtersSlice';
 
 export const StatusFilter = () => {
   const status = useSelector(getFilterStatus);
